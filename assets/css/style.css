@@ -1,38 +1,60 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
+/** #0F1317    text-color: #edf5f7*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+  font-family: "Poppins", sans-serif;
+  color: #b7c0c7;
+  background-color: #0C0E12;
 }
 
 a {
-  color: #149ddd;
+  color: #008cff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #00E1FF;
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
 }
 
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 30px;
+  text-align:center;
+
+  h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #edf5f7;
+    }
+    p {
+      margin-bottom: 0;
+    }
+     span{
+      background: -webkit-linear-gradient(#008CFF, #00E1FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+
+section.light-section{
+  background-color:#0F1317 ;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -43,22 +65,18 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
-}
+  background: #008cff;
+  background: linear-gradient(304deg, rgba(0, 140, 255, 1) 13%, rgba(0, 225, 255, 1) 63%);
 
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
+  i {
+      font-size: 28px;
+      color: #FFF;
+      line-height: 0;
+    }
 }
 
 .back-to-top.active {
@@ -122,7 +140,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #008cff;
   color: #fff;
   text-decoration: none;
 }
@@ -137,21 +155,21 @@ h6 {
   padding-right: 30px;
 }
 
-@media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
 
-  #main {
-    margin-left: 0;
-  }
-
-  .container,
-  .container-fluid {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+#header {
+left: -300px;
 }
+
+#main {
+margin-left: 0;
+}
+
+.container,
+.container-fluid {
+padding-left: 12px;
+padding-right: 12px;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -202,7 +220,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #008cff;
 }
 
 /* Mobile Navigation */
@@ -215,7 +233,8 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background: #008cff;
+  background: linear-gradient(304deg, rgba(0, 140, 255, 1) 13%, rgba(0, 225, 255, 1) 63%);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -281,7 +300,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #008cff;
 }
 
 @media (min-width: 1024px) {
@@ -301,46 +320,6 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
-}
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background: #f5f8fd;
-}
-
-.section-title {
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #173b6c;
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #149ddd;
-  bottom: 0;
-  left: 0;
-}
-
-.section-title p {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -370,7 +349,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #008cff;
   line-height: 0;
 }
 
@@ -378,156 +357,151 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
+.about-wrapper{
+  margin-top:40px;
 }
 
-.facts .count-box {
-  padding: 15px;
-  width: 100%;
+.info-card{
+  width:48%;
+  display:inline-flex;
+  align-items:center;
+  gap:15px;
+  padding:18px;
+  border-radius:14px;
+  border:1px solid #1f2a36;
+  background:#0f1924;
+  margin-bottom:12px;
+  margin-right:10px;
+
+  h5 {
+      font-weight: bold;
+      color: #edf5f7;
+     }
+  p , a{
+    font-size: small;
+    margin-bottom: 0px;
+    color: #b7c0c7;
+    }
+
+  i {
+      font-size:30px;
+      color: #0C0E12;
+      padding:10px 15px;
+      border-radius:14px;
+      background: #008cff;
+      background: linear-gradient(304deg, rgba(0, 140, 255, 1) 13%, rgba(0, 225, 255, 1) 63%);
+    }
 }
 
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-  padding-top: 15px;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
+@media (max-width: 768px) {
+  .info-card{
+    width:100%;
+  }
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+/* Tablet */
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+/* Mobile */
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+.skill-box{
+  padding:20px;
+  border-radius:14px;
+  border:1px solid #1f2a36;
+  background:#0f1924;
+
+  .skill-head{
+      display:inline-flex;
+      text-align: center;
+      align-items: center;
+      color: #edf5f7;
+      margin-bottom: 15px;
+      h4{
+          font-size: large;
+          font-weight: bold;
+          margin: auto 10px;
+          background: -webkit-linear-gradient(#008CFF, #00E1FF);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+      i {
+          font-size:25px;
+          color: #0C0E12;
+          background: #008cff;
+          background: -webkit-linear-gradient(#008CFF, #00E1FF);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+  }
+  .skill-items{
+    display: inline-block;
+      span{
+      display: -webkit-inline-box;
+      margin:4px;
+      padding:5px 10px;
+      border-radius:14px;
+      background:#111e2d;
+      border:1px solid #223344;
+    }
+  }
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.soft-title{
+  text-align:center;
+  margin:40px 0 10px;
+}
+
+.soft-grid{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+
+  span{
+      padding:6px 14px;
+      background: linear-gradient(#0C0E12, #0C0E12) padding-box,
+                  linear-gradient(304deg, rgba(0, 140, 255, 1) 13%, rgba(0, 225, 255, 1) 63%) border-box;
+      border-radius:20px;
+      border:3px solid transparent;
+    }
 }
 
 /*--------------------------------------------------------------
 # Resume
---------------------------------------------------------------*/ 
-.resume .row{
-
-  padding: 0px 150px;
-}
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
+--------------------------------------------------------------*/
+.resume-columns{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  margin-top:30px;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: 2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #2a2e36;
   position: relative;
 }
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  background-color: #f5f8fdba;
-  padding: 20px 30px;
-  border: 2px dashed #149ddd;
-  border-radius: 12px;
-}
-
-
-.resume .resume-item ul .project_title{
-  margin-top: 10px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -536,15 +510,39 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0px;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: #00E1FF;
+  border: 2px solid #2a2e36;
 }
 
-@media (max-width: 768px) {
-  .resume .row{
+.resume .resume-card{
+  padding:20px;
+  border-radius:14px;
+  border:1px solid #1f2a36;
+  background:#0f1924;
+}
 
-    padding: 0px;
-  }
+.resume .resume-card .date{
+    font-size: x-small;
+    color: #00E1FF;
+}
+.resume .resume-card h4 {
+  line-height: 18px;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #edf5f7;
+  margin-bottom: 0px;
+}
+.resume .resume-card p {
+    margin: auto 0;
+    font-size: small;
+}
+.resume .resume-card ul {
+  margin-top: 30px;
+  margin-left: -20px;
+  li {
+      padding-bottom: 10px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -552,6 +550,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  margin-top:50px;
   padding:20px;
   height: 220px;
 }
@@ -581,7 +580,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #008cff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -597,7 +596,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: #00E1FF;
   position: absolute;
   left: 0;
   right: 0;
@@ -606,6 +605,14 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.25;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -624,25 +631,19 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: #008CFF;
+  opacity: 0.75;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #008CFF;
+  opacity: 0.95;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
   border-left: 1px solid #37b3ed;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
@@ -650,14 +651,19 @@ section {
   bottom: 0;
 }
 
-
-
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-
+section.portfolio-details {
+    background-color: #0F1317;
+    padding-top: 50px;
+}
+section.portfolio-details .swiper-slide {
+    max-height:700px;
+}
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  max-height:700px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -668,26 +674,30 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #2a2e36;
   opacity: 1;
-  border: 1px solid #149ddd;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #008cff;
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  margin: auto 20px;
+  padding:30px;
+  background: linear-gradient(#0C0E12, #0C0E12) padding-box,
+              linear-gradient(304deg, rgba(0, 140, 255, 1) 13%, rgba(0, 225, 255, 1) 63%) border-box;
+  border-radius:20px;
+  border:3px solid transparent;
 }
 
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
+  color: #edf5f7;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #edf5f7;
 }
 
 .portfolio-details .portfolio-info ul {
@@ -728,10 +738,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #008cff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #008cff;
 }
 
 .services .icon i {
@@ -745,7 +755,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #008cff;
 }
 
 .services .title {
@@ -760,7 +770,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #008cff;
 }
 
 .services .description {
@@ -854,11 +864,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #008cff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #008cff;
 }
 
 /*--------------------------------------------------------------
@@ -884,7 +894,7 @@ section {
 }
 
 .contact-text .connect-link{
-  color:#149ddd;
+  color:#008cff;
 }
 .contact-text p{
   width: 60%;
@@ -904,7 +914,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #008cff;
   float: left;
   width: 44px;
   height: 44px;
@@ -955,14 +965,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #008cff;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #008cff;
   color: #fff;
 }
 
@@ -1050,7 +1060,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #008cff;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1096,12 +1106,16 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: #0C0E12;
 }
 
 .breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
+  font-size: x-large;
+  font-weight: bold;
+  margin: auto 5px;
+  background: -webkit-linear-gradient(#008CFF, #00E1FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .breadcrumbs ol {
@@ -1171,3 +1185,8 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+# ---------------------CHANGE THEME
+
+
+
