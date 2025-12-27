@@ -592,6 +592,7 @@ padding-right: 12px;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-bott
 }
 
 .portfolio .portfolio-wrap::before {
@@ -720,10 +721,13 @@ section.portfolio-details .swiper-slide {
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.portfolio-details .portfolio-description p{
   padding: 0;
 }
 
+.portfolio-details .portfolio-description li{
+  margin-top: 15px;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
